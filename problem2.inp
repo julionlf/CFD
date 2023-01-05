@@ -1,0 +1,19 @@
+#Input File
+
+#Geometry
+thickness,1
+Lx,3
+Ly,0.2
+dx,0.05
+dy,0.01
+#Materials,rho,cp,mu,kx,ky,kz,xs,xe,ys,ye,zs,ze
+material,1,1,1,0.0263,0.0263,0.0263,0,3,0,0.2,0,1
+
+#Domain Boundary Conditions
+xmin,0,Drichlet
+xmax,0,Drichlet
+ymin,1267.43,Neumann
+ymax,0,Drichlet
+
+#Convection Term
+convection,cd,1,0
